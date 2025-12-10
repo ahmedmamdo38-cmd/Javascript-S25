@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolmannet Harjoitukset</title>
+</head>
+<style>
+.form{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 10px;
+    float:left;
+}
+#t1{
+    background-color: orange;
+}
+#t2{
+    background-color: #FFCCCC;
+}
+#t3{
+    background-color:#FFFF99 ;
+}
+#t4{
+    background-color:#B3FFB3;
+}
+#t5{
+    background-color:#B3D1FF;
+}
+#t6{
+    background-color:#B3D1FF;
+}
+#t7{
+    background-color: #EDF7F6;
+}
+#t8{
+    background-color:#FFA8B5;
+}
+#t9{
+    background-color:  #d0bdf4;
+}
+#t10{
+    background-color: #fceed1;
+}
+#t11{
+    background-color:#39a0ca;
+}
+</style>
+<body>
+    <article class="form" id="t1">
+        <h1>Tehtävä 1</h1>
+        <p>Tee ohjelma, joka pyytää käyttäjältä parillista lukua ja tulostaa tämän jälkeen kaikki parilliset luvut siihen asti poislukien 0:n</p>
+        <form action="">
+            <label for="pluku">Anna parillinen luku:</label>
+            <input type="text" name="pluku" id="pluku">
+            <br><button type="button" name="button" onClick="tulosta()">Tulosta parilliset</button>
+        </form>
+        <p id="vastaus1"></p>
+    </article>
+
+    <article class="form" id="t2">
+        <h1>Tehtävä 2</h1>
+        <p>Kirjoita ohjelma, joka muuntaa käyttäjän antaman sanan salasanaksi siten, että laittaa joka toiseksi kirjaimeksi ison Ö-kirjaimen, eli jos sana on Kaappi --> KÖaÖaÖpÖpÖiÖ</p>
+        <form action="">
+            <label for="password">Anna sana:</label>
+            <input type="text" name="password" id="password">
+            <br><button type="button" name="password" onClick="salasana()">Muuta salasanaksi</button>
+        </form>
+        <p id="vastaus2"></p>
+    </article>
+        
+    <article class="form" id="t3">
+        <h1>Tehtävä 3</h1>
+        <p>Kirjoita ohjelma, joka tarkastaa, onko antamassasi sanassa ö-kirjainta ja kirjoittaa vastaukseksi joko: on tai ei ole</p>
+        <form action="">
+            <label for="o-kirjainta">Anna sana:</label>
+            <input type="text" name="o-kirjainta" id="o-kirjainta">
+            <br><button type="button" name="button" onClick="t3()">Onko ö-kirjainta</button>
+        </form>
+        <p id="vastaus3"></p>
+    </article>
+
+    <article class="form" id="t4">
+        <h1>Tehtävä 4</h1>
+        <p>Kirjoita ohjelma, joka laskee annetun luvun kertoman
+(esim: 4 -> 4*3*2*1 = 24)</p>
+            <form action="">
+                <label for="times">Anna luku, josta lasketaan kertoma:</label>
+                <input type="text" name="times" id="times">
+                <br><button type="button" name="button" onClick="kertoma()">Laske kertoma</button>
+            </form>
+            <p id="vastaus4"></p>
+    </article>
+
+    <article class="form" id="t5">
+        <h1>Tehtävä 5</h1>
+        <p>Kirjoita ohjelma, joka tulostaa näytölle luvut 1-100, kuitenkin siten, että jos luku on 3:lla jaollinen, tulostetaan hip ja viidellä jaollinen tulostetaan heijaa ja jos sekä viidellä että kolmella jaollinen, tulostetaan hipheijaa</p>
+        <form action="">
+            <label for="jaollinen"></label>
+            <br><button type="button" name="button" onClick="tehtäv5()">Tulosta</button>
+        </form>
+        <p id="vastaus5"></p>
+    </article>
+
+    <article class="form" id="t6">
+        <h1>Tehtävä 6</h1>
+        <p>Kirjoita ohjelma,joka tulosta 10 ensimmäistä numeroa</p>
+        <form action="">
+            <label for="firstten"></label>
+            <br><button type="button" name="button" onClick="ens_numeroa()">10 Ensimmäistä</button>
+        </form>
+        <p id="vastaus6"></p>
+    </article>
+
+    <article class="form" id="t7">
+        <h1>Tehtävä 7</h1>
+        <p>Kirjoita ohjelma,joka laskee 10 ensimmäistä numeroa yhteen</p>
+        <form action="">
+            <label for="firstten2"></label>
+            <br><button type="button" name="button" onClick="ens_yhteen()">Laske 10 3ns. yhteen</button>
+        </form>
+        <p id="vastaus7"></p>
+    </article>
+
+    <article class="form" id="t8">
+        <h1>Tehtävä 8</h1>
+        <p>Kirjoita ohjelma, joka kysyy käyttäjältä kahta lukua ja laskee ensimmäisen potenssiin toinen esim. 5 ja 2 = 52 = 25</p>
+        <form action="">
+            <label for="k.potenssi">Anna korotettava luku:</label>
+            <input type="text" name="k.potenssi" id="k.potenssi">
+            <br><label for="potenssi">Anna potenssi:</label>
+            <input type="text" name="potenssi" id="potenssi">
+            <br><button type="button" name="button" onClick="korotettava_potenssi()">Laske</button>
+        </form>
+        <p id="vastaus8"></p>
+    </article>
+
+    <article class="form" id="t9">
+        <h1>Tehtävä 9 </h1>
+        <p>Kirjoita ohjelma,joka etsii annetusta luvuista suurimman ja pienimmän arvon</p>
+        <form action="">
+            <label for="luku1">Anna 1.luku:</label>
+            <input type="text" name="luku1" id="luku1">
+            <br><label for="luku2">Anna 2.luku:</label>
+            <input type="text" name="luku2" id="luku2">
+            <br><label for="luku3">Anna 3.luku:</label>
+            <input type="text" name="luku3" id="luku3">
+            <br><label for="luku4">Anna 4.luku:</label>
+            <input type="text" name="luku4" id="luku4">
+            <br><label for="luku5">Anna 5.luku:</label>
+            <input type="text" name="luku5" id="luku5">
+            <br><button type="button" name="button" onClick="suurin_pienin()">Etsi suurin ja pienin</button>
+        </form>
+        <p id="vastaus9"></p>
+    </article>
+
+    <article class="form" id="t10">
+        <h1>Tehtävä 10</h1>
+        <p>Muokataan salasalatehtävää siten, että se arpoo kirjaimen Ö:n sijasta</p>
+        <form action="">
+            <label for="password2">Anna muokattava salasana:</label>
+            <input type="text" name="password2" id="password2">
+            <button type="button" name="button" onClick="salasana2()">Munna salasanaksi</button>
+        </form>
+
+    </article>
+
+    <article class="form" id="t11">
+        <h1>Tehtävä 11</h1>
+        <p>Tee ohjelma, joka pyytää käyttäjältä kahta numeroa (jälkimmäisen tulee olla isompi) ja tulostaa tuolla välillä parilliset ja parittomat numerot sekä niiden summat</p>
+        <form action="">
+            <label for="pieni">Anna pienempi numero:</label>
+            <input type="text" name="pieni" id="pieni">
+            <br><label for="isompi">Anna isompi numero:</label>
+            <input type="text" name="isompi" id="isompi">
+            <br><button type="button" name="button" onClick="t11()">Näytä parilliset ja parittomat erikseen sekä niiden summa</button>
+        </form>
+        <p id="vastaus11"></p>
+    </article>
+</body>
+</html>

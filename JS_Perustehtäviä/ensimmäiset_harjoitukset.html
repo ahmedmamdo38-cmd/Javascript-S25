@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensimmäiset harjoitukset</title>
+    <style>
+.form{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 10px;
+    float:left;
+    background-color: orange;
+}      
+#t1{
+    background-color:orange ;
+}
+#t2{
+    background-color: pink;
+}
+#t3{
+    background-color:#FFFF99 ;
+}
+#t4{
+    background-color:#B3FFB3;
+}
+#t5{
+  background-color:  #B3D1FF;  
+}
+    </style>
+</head>
+<body>
+    <h1>Ensimmäiset harjoitukset</h1>
+    <article class="form " id="t1">
+        <h1>Tehtävä 1</h1>
+    <p>Tee ohjelma, joka pyytää käyttäjältä kolmea numeroa ja laittaa ne jörjestykseen</p>
+        <form>
+            <label for="first">Anna 1.numero:</label>
+            <input type="text" name="first" id="first">
+            <br><label for="second">Anna 2.numero:</label>
+            <input type="text" name="second" id="second">
+            <br><label for="third">Anna 3,numero:</label>
+            <input type="text" name="third" id="third">
+            <br><button type="button" name="button" onClick="jarjesta()">Järjestä luvut</button>
+        </form>
+        <p id="vastaus"></p>
+    </article>
+
+    <article class="form" id="t2">
+        <h1>Tehtävä 2</h1>
+        <p>Kirjoita ohjelma, joka otta vastaan 5 lukua ja etsii niistä surimman</p>
+        <form>
+            <label for="l1">Anna 1.luku:</label>
+            <input type="text" name="l1" id="l1">
+            <br><label for="l2">Anna 2.luku:</label>
+            <input type="text" name="l2" id="l2">
+            <br><label for="l3">Anna 3.luku:</label>
+            <input type="text" name="l3" id="l3">
+            <br><label for="l4">Anna 4.luku:</label>
+            <input type="text" name="l4" id="l4">
+            <br><label for="l5">Anna 5.luku:</label>
+            <input type="text" name="l5" id="l5">
+            <br><button type="button" name="button" onClick="etsiNumero()">Etsi suurin numero</button>
+        </form>
+        <p id="vastaus2"></p>
+    </article>
+
+    <article class="form" id="t3">
+        <h1>Tehtävä 3</h1>
+        <p>Kirjoita ohjelma, joka kertoo, onko antamsi luku parillinen vai pariton</p>
+        <form>
+            <label for="luku">Anna luku:</label>
+            <input type="text" name="luku" id="luku">
+            <br><button type="button" name="button" onClick="paritonParillinen()">Tarkista</button>
+        </form>
+        <p id="vastaus3"></p>
+    </article>
+
+    <article class="form" id="t4">
+        <h1>Tehtävä 4</h1>
+        <p>Kirjoita ohjelma, joka kysyy käyttäjän ikää ja tarkistaa, mitä ajoneuvoa saa ajaa: <16v - polkupyörää, <18v - mopoa, muutoin autoa </p>
+            <form>
+              <label for="ika">Anna käyttäjän ikä:</label>
+              <input type="text" name="ika" id="ika">
+              <br><button type="button" name="button" onClick="ajonevo()">Näytä ajoneuvo</button>
+            </form>
+            <p id="vastaus4"></p>
+    </article>
+
+    <article class="form" id="t5">
+        <h1>Tehtävä 5</h1>
+        <p>Kirjoita ohjelma, joka kääntää "Hei maailma" - tekstin valitulle kielelle (englanti, ruotsi, espanja)</p>
+        <p>Valitse kieli</p>
+        <select name="" id="kieli">
+            <option value="eng">Englanti</option>
+            <option value="swe">Ruotsi</option>
+            <option value="esp">Espanja</option>
+        </select>
+        <button type="button" id="button" onClick="kaanna()">Käännä</button>
+        <p id="vastaus5"></p>
+    </article>
+</body>
+<script src="ensimmäiset_harjoitukset.js"></script>
+</html>

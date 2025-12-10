@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toiset Harjoitukset</title>
+    <style>
+.form{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 10px;
+    float:left;
+
+}    
+#t1{
+    background-color: orange;
+}
+#t2{
+    background-color: bisque;
+}
+#t3{
+    background-color: blueviolet;
+}
+#t4{
+    background-color: #B3D1FF;
+}
+#t5{
+    background-color: aliceblue;
+}
+    </style>
+</head>
+<body>
+    <article class="form" id="t1">
+        <h1>Tehtävä 1</h1>
+      <form action="">
+        <label for="muuttuja">Anna luku:</label>
+        <input type="text" name="muuttuja" id="muuttuja">
+        <br><button type="button" name="button" onClick="tarkista()">Tarkista</button>
+      </form>
+      <p id="vastaus1"></p>
+    </article >
+    
+    <article class="form" id="t2">
+        <h1>Tehtävä 2</h1>
+        <form action="">
+            <label for="vkp"> Anna numero 1:ltä 7:mään :</label>
+            <input type="text" name="vkp" id="vkp">
+            <br><button type="button" name="button" onClick="viikonpaiva()">Tarkista</button>
+        </form>
+        <p id="vastaus2"></p>
+    </article>
+        
+    <article class="form" id="t3">
+        <h1>Tehtävä 3</h1>
+        <form action="">
+            <label for="vluku">Anna vuosilukua:</label>
+            <input type="text" name="vluku" id="vluku">
+            <br><button type="button" name="button" onClick="karkausvuosi()">Tarkista</button>
+        </form>
+        <p id="vastaus3"></p>
+    </article>
+
+    <article class="form" id="t4">
+        <h1>Tehtävä 4</h1>
+        <form action="">
+            <label for="num1">Anna 1.luku:</label>
+            <input type="text" name="num1" id="num1">
+            <br><label for="num2">Anna 2.luku:</label>
+            <input type="text" name="num2" id="num2">
+            <br><label for="num3">Anna 3.luku:</label>
+            <input type="text" name="num3" id="num3">
+            <br><label for="num4">Anna 4.luku:</label>
+            <input type="text" name="num4" id="num4">
+            <br><label for="num5">Anna 5.luku:</label>
+            <input type="text" name="num5" id="num5">
+            <br><button type="button" name="button" onClick="sk_arvo()">Tarkista</button>
+        </form>
+        <p id="vastaus4"></p>
+    </article>
+
+
+    <article class="form" id="t5">
+        <h1>Tehtävä 5</h1>
+        <form action="">
+            <label for="times">Anna luku:</label>
+            <input type="text" name="times" id="times">
+            <br><button type="button" name="button" onClick="keertolasku()">Click</button>
+        </form>
+        <p id="vastaus5"></p>
+    </article>
+</body>
+<script src="toiset_harjoitukset.js"></script>
+</html>
